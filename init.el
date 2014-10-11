@@ -1,12 +1,12 @@
-
+
 ;; Standard libraries needed
 
 (require 'cl)
 
-
+
 ;; Packages and configs to load
 
-(defvar packages
+ (defvar packages
   '(color-theme
     zenburn
     sunburn
@@ -48,7 +48,7 @@
 
 (defvar configs
   '("global"
-    "god"
+;;    "god"
     "haskell"
     "erc"
     "email"
@@ -59,7 +59,7 @@
   "Configuration files that follow the config/foo.el file path
   format.")
 
-
+
 ;; Load packages
 
 (loop for location in custom-load-paths
@@ -96,8 +96,8 @@
 ;; Mode initializations
 
 (smex-initialize)
-(sunburn)
-(god-mode)
+;;(sunburn)
+;;(god-mode)
 (goto-last-point-mode)
 (turn-on-haskell-simple-indent)
 (load "haskell-mode-autoloads.el")

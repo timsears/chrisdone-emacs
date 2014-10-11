@@ -358,10 +358,10 @@ prefix argument."
 (global-set-key (kbd "C-z") 'ido-switch-buffer)
 (global-set-key (kbd "C-,") 'ace-jump-char-mode)
 
-(global-set-key (kbd "<left>") 'windmove-left)
-(global-set-key (kbd "<right>") 'windmove-right)
-(global-set-key (kbd "<up>") 'windmove-up)
-(global-set-key (kbd "<down>") 'windmove-down)
+(global-set-key (kbd "M-<left>") 'windmove-left)
+(global-set-key (kbd "M-<right>") 'windmove-right)
+(global-set-key (kbd "M-<up>") 'windmove-up)
+(global-set-key (kbd "M-<down>") 'windmove-down)
 
 (global-set-key (kbd "C-w") 'clipboard-kill-region)
 (global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
@@ -403,7 +403,7 @@ prefix argument."
 
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+;;(menu-bar-mode -1)
 
 (setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message t)
