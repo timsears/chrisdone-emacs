@@ -344,6 +344,8 @@ prefix argument."
 
 (global-set-key (kbd "C-\\") 'goto-last-point)
 (global-set-key (kbd "C-v") 'magit-switch-buffer)
+(global-set-key (kbd "C-c C-g") 'magit-status)
+(global-set-key [f9] 'timeclock-dwim)
 (global-set-key (kbd "M-z") 'zap-up-to-char-repeatable)
 (global-set-key (kbd "M-Q") 'unfill-paragraph)
 (global-set-key (kbd "M-;") 'comment-dwim-line)
@@ -392,6 +394,10 @@ prefix argument."
 (define-key inferior-emacs-lisp-mode-map (kbd "C-c C-k") 'ielm-clear)
 (define-key org-mode-map (kbd "C-,") nil)
 (define-key js-mode-map (kbd "C-c C-l") 'javascript-console-log)
+(define-key paredit-mode-map (kbd "M-^") 'paredit-delete-indentation)
+(define-key paredit-mode-map (kbd "M-a") 'paredit-backward-up)
+(define-key markdown-mode-map (kbd "M-;") 'markdown-blockquote-region)
+;;(define-key markdown-mode-map (kbd "C-x g") 'magit-status)
 (define-key sgml-mode-map (kbd "/") nil)
 (define-key c-mode-map (kbd "/") nil)
 
