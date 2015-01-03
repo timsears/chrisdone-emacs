@@ -14,7 +14,7 @@
     paredit
     haskell-mode
     smex
-    magit
+    ;;magit
     goto-last-change
     ace-jump-mode
     markdown-mode
@@ -24,7 +24,7 @@
     echo-keys
     align-by-current-symbol
     ag
-    w3m
+    ;;w3m
     goto-last-point
     github-urls
     s
@@ -42,6 +42,7 @@
 (defvar custom-load-paths
   '("structured-haskell-mode/elisp"
     "hindent/elisp"
+    "haskell-mode"
     "git-modes")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
@@ -53,7 +54,7 @@
     "erc"
     "email"
     "lisp"
-    "w3m"
+    ;;"w3m"
     "markdown"
     "org")
   "Configuration files that follow the config/foo.el file path
@@ -82,7 +83,7 @@
 (require 'hindent)
 (require 'shm-case-split)
 (require 'shm-reformat)
-(require 'w3m-haddock)
+;;(require 'w3m-haddock)
 
 
 ;; Emacs configurations

@@ -187,12 +187,12 @@ the cursor position happened."
 
 (setq haskell-interactive-mode-eval-mode 'haskell-mode)
 
-(setq haskell-process-path-ghci "ghci-ng")
+(setq haskell-process-path-ghci "ghci")
 
 (setq haskell-process-args-ghci '("-ferror-spans"))
 
 (setq haskell-process-args-cabal-repl
-      '("--ghc-option=-ferror-spans" "--with-ghc=ghci-ng"))
+      '("--ghc-option=-ferror-spans" "--with-ghc=ghci"))
 
 (setq haskell-process-generate-tags nil)
 
@@ -208,17 +208,17 @@ the cursor position happened."
 
 ;; Keybindings
 
-(define-key interactive-haskell-mode-map [f5] 'haskell-process-load-or-reload)
-(define-key interactive-haskell-mode-map [f12] 'turbo-devel-reload)
-(define-key interactive-haskell-mode-map [f12] 'haskell-process-cabal-build-and-restart)
-(define-key interactive-haskell-mode-map (kbd "M-,") 'haskell-who-calls)
-(define-key interactive-haskell-mode-map (kbd "C-`") 'haskell-interactive-bring)
-(define-key interactive-haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
-(define-key interactive-haskell-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
-(define-key interactive-haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
-(define-key interactive-haskell-mode-map (kbd "M-.") 'haskell-mode-goto-loc)
-(define-key interactive-haskell-mode-map (kbd "C-?") 'haskell-mode-find-uses)
-(define-key interactive-haskell-mode-map (kbd "C-c C-t") 'haskell-mode-show-type-at)
+;;(define-key interactive-haskell-mode-map [f5] 'haskell-process-load-or-reload)
+;;(define-key interactive-haskell-mode-map [f12] 'turbo-devel-reload)
+;;(define-key interactive-haskell-mode-map [f12] 'haskell-process-cabal-build-and-restart)
+;; (define-key interactive-haskell-mode-map (kbd "M-,") 'haskell-who-calls)
+;; (define-key interactive-haskell-mode-map (kbd "C-`") 'haskell-interactive-bring)
+;; (define-key interactive-haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
+;; (define-key interactive-haskell-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
+;; (define-key interactive-haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
+;; (define-key interactive-haskell-mode-map (kbd "M-.") 'haskell-mode-goto-loc)
+;; (define-key interactive-haskell-mode-map (kbd "C-?") 'haskell-mode-find-uses)
+;; (define-key interactive-haskell-mode-map (kbd "C-c C-t") 'haskell-mode-show-type-at)
 
 (define-key hamlet-mode-map [f12] 'haskell-process-cabal-build-and-restart)
 (define-key hamlet-mode-map (kbd "C-`") 'haskell-interactive-bring)
