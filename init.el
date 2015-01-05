@@ -10,7 +10,7 @@
   '(color-theme
     zenburn
     sunburn
-;;    god-mode
+    god-mode
     paredit
     haskell-mode
     smex
@@ -42,14 +42,13 @@
 (defvar custom-load-paths
   '("structured-haskell-mode/elisp"
     "hindent/elisp"
-    "haskell-mode"
     "git-modes")
   "Custom load paths that don't follow the normal
   package-name/module-name.el format.")
 
 (defvar configs
   '("global"
-;;    "god"
+    "god"
     "haskell"
     "erc"
     "email"
