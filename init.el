@@ -10,7 +10,7 @@
   '(color-theme
     zenburn
     sunburn
-    god-mode
+;;    god-mode
     paredit
     haskell-mode
     smex
@@ -24,7 +24,7 @@
     echo-keys
     align-by-current-symbol
     ag
-    ;;w3m
+    w3m
     goto-last-point
     github-urls
     s
@@ -54,7 +54,7 @@
     "erc"
     "email"
     "lisp"
-    ;;"w3m"
+    "w3m"
     "markdown"
     "org")
   "Configuration files that follow the config/foo.el file path
@@ -83,7 +83,7 @@
 (require 'hindent)
 (require 'shm-case-split)
 (require 'shm-reformat)
-;;(require 'w3m-haddock)
+(require 'w3m-haddock)
 
 
 ;; Emacs configurations
